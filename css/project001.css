@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0 0 0 0
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+body div {
+    width: 1920px;
+}
+#GBF{background-image: url(../img/GBF/em2sHu.png);width: 100%;height: 100%;background-repeat: no-repeat;}
+
+.TopContainerdiv {
+    background-image: url(../img/home_mv.jpg);
+    width: 1920px;
+    height: 1500px
+}
+.CharContainerdiv {
+    background-color:rgb(255, 255, 255);
+    width: 1920px;
+    height: 1500px
+}
+body{width: 1920px;height: 1500px;}
+
+/* div寬度影響往驗整體寬度 */
+/* .maincontainer{height: 1500px;} */
+.home-copy {
+    width: 170px;
+    position: absolute;
+    top: 135px;
+    left: 900px;
+
+}
+
+.home-copy>img {
+    width: 170px;
+}
+
+.home-logo {
+    width: 585px;
+    height: 308px;
+    position: relative;
+    top: 600px;
+    left: 1270px;
+
+}
+
+#officalbanner {
+    position: absolute;
+    left: 50px;
+    top: 1350px;
+}
+
+#versusbanner {
+    position: absolute;
+    left:270px;
+    top: 1350px;
+}
+
+#Topheader {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 50px;
+}
+#charheader {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 50px;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    z-index: 1000;
+
+    margin-top: 1104px;
+    height: 37px;
+    width: 1920px;
+}
+.charft{
+    position: absolute;
+    z-index: 1000;
+
+    margin-top: 1500px;
+    height: 37px;
+    width: 1920px;
+
+}
+
+footer div {
+    position: relative;
+    display: inline;
+}
+
+#rfooter {
+    width: 365px;
+    float: right
+}
+
+#charcard{
+    width:1000px !important;
+    height: 507px;
+}
+.charmaincontainer{width: 1000px;top: 500px;}

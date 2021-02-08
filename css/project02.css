@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0 0 0 0;
+    font-family: "Microsoft JHengHei";
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+body {
+    background: #fff url(../img/GBF/em2sHu.png) center center fixed no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+
+/* main */
+.navbar{
+    background-repeat: no-repeat; 
+    background-color: #2e2e2e67;
+    width: 100%;
+}
+#mainbg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+#mcbc {
+    background-image: url(../img/GBF/background/Background.png);
+    width: 100%;
+    height: 730px;
+    position: absolute;
+    top: 15%;
+    overflow: hidden;
+    max-height: 730px;
+}
+
+.island-name:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*Top*/
+#opvideo {
+    width: 800px;
+    height: 536px;
+    position: fixed;
+    top: 25%;
+    left: 30%
+}
+
+#gbflogo {
+    width: 273px;
+    height: 187px;
+    position: fixed;
+    top: 50%;
+    left: 80%;
+}
+
+.qrcode {
+    background-color: rgba(240, 255, 240, 0.39);
+    width: 20vw;
+    height: 27.5vh;
+    position: fixed;
+    right: 1%;
+    bottom: 25px;
+}
+
+#googleqr,
+#appqr {
+    width: 100%;
+}
+.twitterdiv{background-color:#2e2e2e67; width: 250px;height: 790px;}
+/*World*/
+
+.cloud-item {
+    position: absolute;
+    background-image: url(../img/GBF/elements/cloud/cloudgroup01.png);
+    /* background-color: black; */
+    /* z-index: 1; */
+    width: 310px;
+    height: 208px;
+    animation: cloud-animation 10s linear infinite both;
+}
+
+/* .island-itme {
+    /* animation: island-animation-a 5s linear infinite; */
+/* position: relative;
+    z-index: 1;
+} */
+.island {
+    position: relative;
+    animation: island-animation-a 5s linear infinite;
+}
+
+.island-name {
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 1px #4a3607, -1px -1px 1px #4a3607, -1px 1px 1px #4a3607, 1px -1px 1px #4a3607;
+    font-size: 21px;
+    font-family: "Microsoft JHengHei";
+    z-index: 3;
+
+}
+
+/* The Modal (background) */
+.mymodal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    ;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgb(236, 230, 220);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+
+}
+.modaldiv {
+    margin: 0 2.5%;
+}
+.contentD2{
+    width:1300px;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 34px;
+    font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    /* width:90%; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#myModal h2,
+#myModal p,
+#myModal li {
+    /* color: white;
+    text-shadow: 1px 1px 1px #3a2a06, -1px -1px 1px #3a2a06, -1px 1px 1px #3a2a06, 1px -1px 1px #3a2a06; */
+    font-family: "Microsoft JHengHei";
+}
+
+/* Media */
+.swiper-container {
+    width: 100%;
+    margin-left: 50px;
+    overflow: normal;
+    height: 500px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    /* decide the reflect length*/
+    height: 300px;
+    background: none;
+    /* reflect */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006)
+}
+
+.swp {
+    width: 1200px;
+    overflow: hidden;
+    height: 600px;
+    top: 25%;
+    left: 500px;
+    position: absolute;
+
+}
+
+.spotify {
+    width: 300px;
+    height: 300px;
+}
+.buttons {
+
+    display: inline;
+    padding: 3px 6px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 25%;
+}
+#carouselWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.vlcl {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+}
+
+#carousel>img{
+    width: 150px;
+    height: 150px;
+}
+
+/* animation */
+@keyframes island-animation-a {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(5px)
+    }
+
+    75% {
+        transform: translateY(-5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes island-animation-b {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-5px)
+    }
+
+    75% {
+        transform: translateY(5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes cloud-animation {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translateX(80px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+.island:nth-child(2n+1) {
+    animation: island-animation-b 5s linear infinite;
+}
+
+.cloud-item:nth-child(2n+1) {
+    animation: cloud-animation 10s linear 4s infinite both;
+}
+
+.cloud-item:nth-child(3n+1) {
+    animation: cloud-animation 10s linear 7s infinite both;
+}
+
+/* */

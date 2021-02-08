@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="./img/GBF/icon.ico" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <script src="./_js/jquery.min.js"></script>
+    <script src="./_js/popper.min.js"></script> -->
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script src="./js/media.js">
+
+    </script>
+
+    <style>
+        @import url(./css/project02.css);
+
+
+        body {
+
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <nav class="navbar navbar-expand-lg flex-column flex-md-row">
+            <!-- style="background-repeat: no-repeat; background-color: #7fff00;" -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <a class="nav-item nav-link text " href="gbftop.html"><b
+                        class="btn text-white font-weight-bold">TOP</b utton></a>
+                <a class="nav-item nav-link text " href="gbfworld.html"><button
+                        class="btn text-white font-weight-bold">WORLD</button></a>
+                <a class="nav-item nav-link text " href="gbfmedia.html"><button
+                        class="btn text-white font-weight-bold">MEDIA</button></a>
+                <a class="nav-item nav-link text " href="gbfchar.html"><button
+                        class="btn text-white font-weight-bold">CHARACTER</button></a>
+            </div>
+        </nav>
+        <div id="mcbc" style="background: rgba(0, 0, 0, 0.7);">
+            <div class="vlcl">
+                <div id="spinner"></div>
+                <button class="buttons" id="prev"><img class="arrows" src="./img/GBF/media/arrow_prev_off.png" alt=""></button>
+                <div id="carousel">
+                    <img id="album0" src="./img/GBF/media/album_pic/album00.jpg">
+                    <img id="album1" src="./img/GBF/media/album_pic/album01.jpg">
+                    <img id="album2" src="./img/GBF/media/album_pic/album02.jpg">
+                    <img id="album3" src="./img/GBF/media/album_pic/album03.jpg">
+                    <img id="album4" src="./img/GBF/media/album_pic/album04.jpg">
+                </div><button class="buttons" id="next"><img class="arrows" src="./img/GBF/media/arrow_next_off.png" alt=""></button>
+            </div>
+
+
+
+
+            <!-- Swiper -->
+
+            <div class="swp">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><iframe class="spotify" id="s01"
+                                src="https://open.spotify.com/embed/track/4siwSUxKboJurBVDIlsyrU" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+
+                        <div class="swiper-slide"><iframe class="spotify" id="s02"
+                                src="https://open.spotify.com/embed/track/3XMDQKfDzRHlHYh8BCiTAx" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+
+                        <div class="swiper-slide"><iframe class="spotify" id="s03"
+                                src="https://open.spotify.com/embed/track/3kH5MCZLHQR9cQ7dz3TPoA" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+
+                        <div class="swiper-slide"><iframe class="spotify" id="s04"
+                                src="https://open.spotify.com/embed/track/6TNX1kNG5aBPjJ06zq79oA" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+
+                        <div class="swiper-slide"><iframe class="spotify" id="s05"
+                                src="https://open.spotify.com/embed/track/05KErj6Laey45SfnebpsP0" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+
+                        <div class="swiper-slide"><iframe class="spotify" id="s06"
+                                src="https://open.spotify.com/embed/track/7jd81fCdmXk39eBCZVWxjT" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+
+                        <div class="swiper-slide"><iframe class="spotify" id="s07"
+                                src="https://open.spotify.com/embed/track/1Dc4UJcVnKIhaDOqd1QvT5" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <iframe class="spotify" id="s08"
+                                src="https://open.spotify.com/embed/track/24qetX799Itmynw8n66MjP" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                        <div class="swiper-slide"><iframe class="spotify" id="s09"
+                                src="https://open.spotify.com/embed/track/2PqX4JVpG2yulDyhNhX4hm" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe></div>
+                        <div class="swiper-slide">
+                            <iframe class="spotify" id="s10"
+                                src="https://open.spotify.com/embed/track/62ie248woL8NyYveN708Zy" frameborder="0"
+                                allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script>
+            // vertical
+            var Carousel = {
+                width: 150,     // Images are forced into a width of this many pixels.
+                numVisible: 3,  // The number of images visible at once.
+                duration: 150,  // Animation duration in milliseconds.
+                padding: 2      // Vertical padding around each image, in pixels.
+            };
+
+            function rotateForward() {
+                var carousel = Carousel.carousel,
+                    children = carousel.children,
+                    firstChild = children[0],
+                    lastChild = children[children.length - 1];
+                carousel.insertBefore(lastChild, firstChild);
+            }
+            function rotateBackward() {
+                var carousel = Carousel.carousel,
+                    children = carousel.children,
+                    firstChild = children[0],
+                    lastChild = children[children.length - 1];
+                carousel.insertBefore(firstChild, lastChild.nextSibling);
+            }
+
+            function animate(begin, end, finalTask) {
+                var wrapper = Carousel.wrapper,
+                    carousel = Carousel.carousel,
+                    change = end - begin,
+                    duration = Carousel.duration,
+                    startTime = Date.now();
+                carousel.style.top = begin + 'px';
+                var animateInterval = window.setInterval(function () {
+                    var t = Date.now() - startTime;
+                    if (t >= duration) {
+                        window.clearInterval(animateInterval);
+                        finalTask();
+                        return;
+                    }
+                    t /= (duration / 2);
+                    var top = begin + (t < 1 ? change / 2 * Math.pow(t, 3) :
+                        change / 2 * (Math.pow(t - 2, 3) + 2));
+                    carousel.style.top = top + 'px';
+                }, 1000 / 60);
+            }
+
+            window.onload = function () {
+                document.getElementById('spinner').style.display = 'none';
+                var carousel = Carousel.carousel = document.getElementById('carousel'),
+                    images = carousel.getElementsByTagName('img'),
+                    numImages = images.length,
+                    imageWidth = Carousel.width,
+                    aspectRatio = images[0].width / images[0].height,
+                    imageHeight = imageWidth / aspectRatio,
+                    padding = Carousel.padding,
+                    rowHeight = Carousel.rowHeight = imageHeight + 2 * padding;
+                carousel.style.width = imageWidth + 'px';
+                for (var i = 0; i < numImages; ++i) {
+                    var image = images[i],
+                        frame = document.createElement('div');
+                    frame.className = 'pictureFrame';
+                    var aspectRatio = image.offsetWidth / image.offsetHeight;
+                    image.style.width = frame.style.width = imageWidth + 'px';
+                    image.style.height = imageHeight + 'px';
+                    image.style.paddingTop = padding + 'px';
+                    image.style.paddingBottom = padding + 'px';
+                    frame.style.height = rowHeight + 'px';
+                    carousel.insertBefore(frame, image);
+                    frame.appendChild(image);
+                }
+                Carousel.rowHeight = carousel.getElementsByTagName('div')[0].offsetHeight;
+                carousel.style.height = Carousel.numVisible * Carousel.rowHeight + 'px';
+                carousel.style.visibility = 'visible';
+                var wrapper = Carousel.wrapper = document.createElement('div');
+                wrapper.id = 'carouselWrapper';
+                wrapper.style.width = carousel.offsetWidth + 'px';
+                wrapper.style.height = carousel.offsetHeight + 'px';
+                carousel.parentNode.insertBefore(wrapper, carousel);
+                wrapper.appendChild(carousel);
+                var prevButton = document.getElementById('prev'),
+                    nextButton = document.getElementById('next');
+                prevButton.onclick = function () {
+                    prevButton.disabled = nextButton.disabled = true;
+                    rotateForward();
+                    animate(-Carousel.rowHeight, 0, function () {
+                        carousel.style.top = '0';
+                        prevButton.disabled = nextButton.disabled = false;
+                    });
+                };
+                nextButton.onclick = function () {
+                    prevButton.disabled = nextButton.disabled = true;
+                    animate(0, -Carousel.rowHeight, function () {
+                        rotateBackward();
+                        carousel.style.top = '0';
+                        prevButton.disabled = nextButton.disabled = false;
+                    });
+                };
+            };
+
+            //Initialize Swiper 
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                // pagination: {
+                //     el: '.swiper-pagination',
+                // },
+                loop: true,
+            });
+            
+        </script>
+        <script src="./js/media.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1">
+        <title>Document</title>
+        <link rel="Shortcut Icon" type="image/x-icon" href="./img/GBF/icon.ico" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+
+        <style>
+                @import url(./css/project02.css);
+
+                @media screen and (min-width: 801px) and (max-width: 1800px) {
+                        .tips {
+                                display: none;
+                        }
+                }
+
+                @media screen and (max-width: 800px) {
+                        .tips {
+                                display: none;
+                        }
+
+                        .islandpic {
+                                visibility: hidden
+                        }
+
+                        .contentdetail p,
+                        p {
+                                width: 800px;
+                        }
+
+                        .modal-content {
+                                width: 800px;
+                                overflow: scroll;
+                        }
+
+                        #mcbc {
+                                overflow: scroll;
+                        }
+
+                }
+        </style>
+</head>
+
+<body>
+        <div>
+                <!-- <img id="mainbg" src="./img/GBF/em2sHu.png" style="width: 100%; height: 100vh;position: fixabed;"
+                        alt=""> -->
+                <nav class="navbar navbar-expand-lg flex-column flex-md-row">
+                        <!-- style="background-repeat: no-repeat; background-color: #7fff00;" -->
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <a class="nav-item nav-link text " href="gbftop.html"><button
+                                                class="btn text-white font-weight-bold">TOP</button></a>
+                                <a class="nav-item nav-link text " href="gbfworld.html"><button
+                                                class="btn text-white font-weight-bold">WORLD</button></a>
+                                <a class="nav-item nav-link text " href="gbfmedia.html"><button
+                                                class="btn text-white font-weight-bold">MEDIA</button></a>
+                                <a class="nav-item nav-link text " href="gbfchar.html"><button
+                                                class="btn text-white font-weight-bold">CHARACTER</button></a>
+                        </div>
+                </nav>
+
+                <div id="mcbc">
+                        <div
+                                style="background-image: url(./img/GBF/map.jpg);border: black 1px solid; position:absolute;left: 22%;width: 960px;height: 730px; background-repeat: no-repeat;">
+                                <!-- island -->
+
+                                <div class="island" style=" top: 150px;left: 90px;">
+                                        <img style="width:13%;"
+                                                src="./img/GBF/elements/shima/Port_Breeze_Archipelago.png" alt="">
+                                </div>
+                                <div class="island" style=" top:180px ;left:30px;">
+                                        <img style="width: 13%;" src="./img/GBF/elements/shima/Auguste_Isles.png"
+                                                alt="">
+                                </div>
+                                <div class="island" style=" top:240px ;left:135px ;">
+                                        <img style="width: 13%;" src="./img/GBF/elements/shima/Albion Citadel.png"
+                                                alt="">
+                                </div>
+                                <div class="island" style=" top:70px ;left:315px ;">
+                                        <img style="width: 13%;" src="./img/GBF/elements/shima/Lumacie_Archipelago.png"
+                                                alt="">
+                                </div>
+                                <div class="island" style=" bottom: 140px;left:260px ;">
+                                        <img style="width: 13%;" src="./img/GBF/elements/shima/Valtz_Duchy.png" alt="">
+                                </div>
+                                <div class="island" style=" bottom: 360px;left:315px ;">
+                                        <img style="width: 10%;" src="./img/GBF/elements/shima/Zinkenstill.png" alt="">
+                                </div>
+                                <div class="island" style=" bottom:550px ;left:-2px ;">
+                                        <img style="width: 14%;" src="./img/GBF/elements/shima/Arcana.png" alt="">
+                                </div>
+                                <div class="island" style=" bottom: 519px;left:600px ;">
+                                        <img style="width: 16%;" src="./img/GBF/elements/shima/Agastia.png" alt="">
+                                </div>
+                                <div class="island" style=" bottom:510px ;left:800px ;">
+                                        <img style="width: 16%;"
+                                                src="./img/GBF/elements/shima/Former_Capital_Mephorash.png" alt="">
+                                </div>
+                                <div class="island" style=" bottom: 555px;left:540px;">
+                                        <img style="width: 16%;" src="./img/GBF/elements/shima/Amalthea_Island.png"
+                                                alt="">
+                                </div>
+                                <div class="island" style=" bottom:500px ;left: 600px;">
+                                        <img style="width: 12%;" src="./img/GBF/elements/shima/MistShrouded_Isle.png"
+                                                alt="">
+                                </div>
+                                <div class="island" style=" bottom:613px ;left: 820px;">
+                                        <img style="width: 11%;" src="./img/GBF/elements/shima/Golonzo_Island.png"
+                                                alt="">
+                                </div>
+                                <div class="island" style=" bottom:540px ;left:570px;">
+                                        <img style="width: 40%;" src="./img/GBF/elements/shima/Dydroit_Belt.png" alt="">
+                                </div>
+                                <div class="island" style=" bottom:1198px ;left:770px ;">
+                                        <img style="width: 20%;"
+                                                src="./img/GBF/elements/shima/SilverwindStretch_NorthVast.png" alt="">
+                                </div>
+
+
+
+
+                                <a class="island-name" id="PortBreezepic" style="bottom: 1150px;left:100px;"
+                                        href="#"><span>微風港群島</span>
+                                </a>
+                                <a class="island-name" style="bottom:1020px ;right:75px;"
+                                        href="#"><span>奧古斯提列島</span></a>
+                                <a class="island-name" style="bottom:870px ;right:130px;"
+                                        href="#"><span>城砦都市阿爾比翁</span></a>
+                                <a class="island-name" style="bottom:960px ;right:95px ;" href="#">
+                                        <span>露瑪希群島</span></a>
+                                <a class="island-name" style="bottom:1070px ;right:260px;"
+                                        href="#"><span>巴爾茲公國</span></a>
+                                <a class="island-name" style="bottom:1210px ;right: 320px;"
+                                        href="#"><span>賽克汀瑟</span></a>
+                                <a class="island-name" style="bottom:1265px ;right:710px ;"
+                                        href="#"><span>阿爾卡納的轉世</span></a>
+                                <a class="island-name" style="bottom:1170px ;left:620px ;float: left;"
+                                        href="#"><span>帝都阿卡斯提亞</span></a>
+                                <a class="island-name" style="bottom:1090px ;left:650px ;float: left;"
+                                        href="#"><span>舊王都美弗拉修</span></a>
+                                <a class="island-name" style="bottom:1045px;left: 270px;float: left;"
+                                        href="#"><span>阿馬提亞島</span></a>
+                                <a class="island-name" style="bottom:925px ;left:215px ;float: left;"
+                                        href="#"><span>環霧之島</span></a>
+                                <a class="island-name" style="bottom: 955px;left:350px ;float: left;"
+                                        href="#"><span>加隆佐島</span></a>
+                                <a class="island-name" style="bottom: 800px;left:160px ;float: left;"
+                                        href="#"><span>戴達羅島鏈</span></a>
+                                <a class="island-name" style="bottom: 1245px;left:145px ;float: left;"
+                                        href="#"><span>白風之境</span></a>
+
+                                <!-- cloud -->
+                                <div class="cloud" style="overflow: hidden;">
+                                        <div class="cloud-item" style="left: 50px;top:50px "></div>
+                                        <div class="cloud-item" style="left:0px ;top:150px "></div>
+                                        <div class="cloud-item" style="left:100px ;top:350px "></div>
+                                        <div class="cloud-item" style="left:240px ;top:50px "></div>
+                                        <div class="cloud-item" style="left:380px ;top:150px "></div>
+                                        <div class="cloud-item" style="left:50px ;top:550px "></div>
+                                        <div class="cloud-item" style="left:200px ;top:580px "></div>
+                                        <div class="cloud-item" style="left:500px ;top:50px "></div>
+                                        <div class="cloud-item" style="left:500px ;top:360px "></div>
+                                        <div class="cloud-item" style="left:400px ;top:450px "></div>
+                                        <!-- <div class="cloud-item" style="left:500px ;top:350px "></div> -->
+                                </div>
+                        </div>
+                        <div class="tips" style="position: static;float: right;">
+
+                                <div id="tip_content"><img style="width:280px; right: 30px;top: 300px;position: fixed;"
+                                                src="./img/GBF/text01.png" alt=""></div>
+                                <div id="vyrn_tip"><img style="right: 280px;top: 280px; position: fixed;"
+                                                src="./img/GBF/tip_vyrn.png" alt=""></div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <!-- Port_Breeze_Archipelago -->
+        <div id="myModal0" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;width: 1500px;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1500px;width: 1300px;">
+                                <h2 style="position: absolute;margin-top: 1%;padding: 0 1.5%;">島嶼概況</h2>
+
+                                <div class="" style="margin-top: 5%;padding: 0 2%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;因為有星晶獸提亞馬特的存在，群島的四周風勢平穩，故得名微風港。托各個騎空團在此地交流的福，微風港群島的經濟和文化得到了長足發展。
+                                                群島的主體是艾因嘉納島，島上的市區作為商業中心而遠近聞名。
+                                                需要特別注意的是，雖然在群島上讓人感到既寧靜又放鬆，但是風勢卻連綿不斷，甚至有些陰冷潮濕。</p>
+                                </div>
+
+                                <div> <img class="islandpic"
+                                                style="width: 640px;height: 810px; position: relative;bottom:200px;left:700px"
+                                                src="./img/GBF/island_pic/Port_Breeze_Archipelago.jfif" alt="">
+
+                                        <h2 style="position: relative;bottom: 800px;padding: 0 2%;">氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:780px;padding: 0 2%;">
+                                                        &emsp;&emsp;艾因加納島全貌，左側的棧橋連接港口和騎空艇，正中間的大教堂內供奉著守護神提亞馬特。
+
+                                                        微風港群島的氣候一年四季溫和安定。作為法塔格蘭德空域西部的交通樞紐，其經濟實力在空域內數一數二。
+
+                                                        群島的主島名叫艾因加納島，在主島上專門為騎空艇製作的棧橋來方便騎空士們的進出；同時在艾因加納島的西南部還有著這裡最古老也是規模最大的港口：微風港，後來人們就用這個名字來稱呼這個群島。
+
+                                                        由於星晶獸提亞馬特的恩惠，這裡的風較為安定，騎空士們也為了製造出更好的騎空艇而在城鎮中創造著財富。</p>
+                                        </div>
+
+                                        <div class="column contentdetail" style="position: relative;">
+                                                <h2 style="position: relative;bottom: 770px;left: 30px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:770px;left: 60px;list-style-type: circle;">
+                                                        <li><b>烏格德城堡</b></li>
+                                                        <p style="width: 500px;">
+                                                                烏格德城堡是一座位於鬧市區的古城，千百年來，這座古城經歷了無數滄桑和劇變。現在，這座城堡主要是作為一個指揮塔，對來往港口的騎空艇進行交通管制。
+                                                        </p>
+
+                                                        <li><b> 榭洛醬的萬事屋</b></li>
+                                                        <p>這座商店提供騎空士們需要的一切，從日常​​用品到攻城武器，只有你想不到的，沒有榭洛醬賣不了的。除了銷售服務，萬事屋還開設了酒館供騎空士們分享各自的所見所聞。
+                                                        </p>
+
+                                                        <li><b>微風港大教堂</b> </li>
+                                                        <p>微風港的聖地，在這裡供奉著風之星晶獸和守護神：提亞馬特。然而，在百年時光的傳承中，這份信仰漸漸地變得平淡，甚至有些人已經對提亞馬特失去了敬意。
+                                                        </p>
+                                                        <li><b>微風港棧橋</b> </li>
+                                                        <p>騎空艇著陸時所使用的棧橋，主要是用來接送乘客和搬運貨物。如何將龐大的騎空艇精準地對準細細的棧橋，可以準確地看出一個騎空士的駕駛技巧。
+                                                        </p>
+                                                </ol>
+                                                <div class="contentD2">
+                                                        <h2 style="position:relative;bottom:750px;left:30px">主要居民</h2>
+                                                        <p
+                                                                style="position:relative;bottom:750px;left:30px;">
+                                                                &emsp;&emsp;作為一個經濟和文化交流的中心島嶼，微風港群島上到處都是四大種族的居民。雖然曾經這裡奉行過君主制，但是在君主制被廢止之後，這座群島通過近代化改革成為了民主國家。
+                                                        </p>
+                                                        <h2 style="position:relative;bottom:740px;left:30px">特產和名品</h2>
+                                                        <p
+                                                                style="position:relative;bottom:740px;left:30px;">
+                                                                &emsp;&emsp;得益於涼爽的微風和溫暖的氣候，微風港群島的葡萄酒、奶酪以及香草非常有名。使用這些材料做出來的料理在來往的商人和旅客之中具有非常高的人氣。由於城市的規模，輕工業也很發達，部分輕工業產品遠銷其他島嶼。除此之外，也有很多人利用物流優勢通過加工貿易獲取利潤。
+                                                        </p>
+                                                </div>
+
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Auguste_Isles -->
+        <div id="myModal1" class="mymodal">
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1400px;">
+                                <h2 style="position: absolute;margin-top: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top: 9%;padding: 0 2%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;奧古斯提的正式名稱是“奧古斯提特別經濟合作自治區”，該地區以豐富的水資源儲量而聞名世界。
+
+                                                奧古斯提沒有向臨近的政權效忠，而是作為一個中立地區獨立存在。
+
+                                                其引以為傲的是一個全空域絕無僅有的大型湖泊，慕名來此地觀光的遊客絡繹不絕。
+
+                                                群島上的商業街絕對是一道亮麗的風景線，商舖多到甚至無法分辨出商業街的入口和出口。
+
+                                                這些商舖的稅收刺激了群島經濟的蓬勃發展，他們甚至能夠僱傭和正規軍隊同等水平的自衛武裝來守衛家園。</p>
+                                </div>
+
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 640px;position: relative;bottom:300px;left:700px"
+                                                src="./img/GBF/island_pic/Auguste_Isles.jfif" alt="">
+
+
+                                        <h2 style="position:relative;left: 20px; bottom:780px">景點</h2>
+                                        <div class="column" style="position: relative; width: 500px;">
+                                                <ol
+                                                        style="position: relative;bottom:760px;left: 60px;list-style-type: circle;">
+                                                        <li><b>水上都市 米薩雷亞</b></li>
+                                                        <p>奧古斯特群島的行政首府叫做米薩雷亞，這個名字最開始只是人們對這座被湖水環繞的城市的暱稱，意為“水上之城”。當地居民通常使用船來在城市之中穿行。
+                                                        </p>
+
+                                                        <li><b>奧古斯特商業街</b> </li>
+                                                        <p>奧古斯提群島是整個法塔格蘭德空域的經濟核心，各式各樣的商舖佔據了城市的每一個角落。在奧古斯提並沒有常駐軍隊，作為替代的是金主們用賞金招來的僱傭兵。在大多數地區，由於騎空艇是主要的交通工具，所以人們傾向於將商店開設在更高的地方；但是在奧古斯提卻恰恰相反，因為人們更喜歡乘船，所以位置較低的商舖往往需要更高的租金。
+                                                        </p>
+
+                                                        <li><b>希望之橋</b> </li>
+                                                        <p style="width: 1300px;">
+                                                                米薩雷亞以及整個群島最為著名的旅遊景點之一。據說只要你在日落時分走過這座橋，你的願望就一定能夠實現。
+                                                        </p>
+                                                        <li><b>奧古斯提大瀑布</b> </li>
+                                                        <p style="width: 1300px;">從遙遠的地方飛流直下的巨型瀑布，其形狀正如同那傳說中的守護神水龍。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:750px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:750px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;四大種族的居民共同生活在奧古斯特群島上，這點和其他島嶼並沒有什麼區別。
+                                                        而觀光部門以及行政部門等實權機構的控制者大多是哈比族，而哈比族的政治立場相對來說較為強硬，這點略微引起了附近國家的不滿。
+                                                </p>
+                                                <h2 style="position:relative;bottom:730px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:730px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;從廣闊的大海裡獲取的水產品加工而成的乾貨，受到空域中各個島嶼人民的喜愛。
+                                                        從奧古斯提海中精煉提取的優質食鹽配上新鮮的水產而做出的料理堪稱極品美味，甚至許多遊客專程到奧古斯提只為這裡的珍饈美味。
+                                                        除此之外，溫暖的氣候下栽培的芳香四溢的鮮花，作為觀賞品也有獨特的人氣。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Albion_Citadel -->
+        <div id="myModal2" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1600px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top: 5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;說起阿爾比翁，人們首先想到的就是那所享有極高聲望的軍事學院。
+                                                這裡最初是由星之民建造的一座前線城堡，然而現在已經成為一個以軍事學院為中心的城市。
+                                                同樣由於悠久的歷史，其保留了一些現代人們認為有些怪異的傳統，比如使用真實的魔物進行實戰訓練，以及通過比武競賽的方式來選出領主和指揮官。
+                                                每年都有大批從這所軍事學院畢業的精英進入各個國家和軍隊的重要部門，在他們所擅長的領域中發揮勤奮地工作著。</p>
+                                </div>
+
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:300px;left:700px"
+                                                src="./img/GBF/island_pic/Albion_Citadel.jfif" alt="">
+
+                                        <h2 style="position: relative;bottom: 800px;padding: 0 2%;left: 5px;">氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:780px;padding: 0 2%;">
+                                                        &emsp;&emsp;阿爾比翁是一座人造島嶼，其構造上因便於空氣流通，所以在這裡風力會比其他島嶼更大一些，平均氣溫也略低一點。
+                                                        正因為如此，軍事學院的製服無論性別，都是以長袖為主。
+                                                        在島嶼的正中央就是整個阿爾比翁城存在的意義——阿爾比翁城堡，這裡既是政府的中樞也是領主的官邸，甚至軍事學院的學生宿舍也建設於此。
+                                                        在過去，這裡曾經被當做前線要塞而使用過，所以在居民區和城市中心的街道上都能看到殘破的城牆，彷彿在敘說那戰火紛爭的歲月。</p>
+                                        </div>
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;bottom: 780px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:760px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>城砦都市阿爾比翁</b></li>
+                                                        <p style="width:500px;">
+                                                                這座以軍事學院為核心的城堡型城市最初是由星之民所建造的。這裡的人民奉行實力至上主義，當上一任阿爾比翁領主去世之後就會舉辦全城的比武大會，其中的優勝者將當選下一任的領主。
+                                                        </p>
+
+                                                        <li><b>阿爾比翁城堡</b> </li>
+                                                        <p>阿爾比翁城堡位於整個城市的中心，同時這裡也是領主的官邸。不僅如此，會客廳、休息室等也都設在此處。城堡的下方就是那鼎鼎大名的軍事學院。
+                                                        </p>
+
+                                                        <li> <b>阿爾比翁居住區</b> </li>
+                                                        <p>居民區環繞阿爾比翁城堡而建，且佔地面積遠大於城堡。為了讓阿爾比翁的居民擁有強健的身體素質和戰術素養，阿爾比翁領主在街道上佈滿了兇猛的野獸。如果缺乏戰術訓練的人來到阿爾比翁的話，不僅需要時刻保持警惕，甚至還需要雇傭一名保鏢。
+                                                        </p>
+                                                        <li><b> 阿爾比翁綠化帶</b></li>
+                                                        <p>雖然阿爾比翁是一座人造城市，但還是有一些野生植物在這裡落地生根。在上千年的時間裡，風把種子帶到了阿爾比翁的各個角落。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:760px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:760px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;由於阿爾比翁本身是學術都市，加上有魔物被放養在城市的街道上，所以幾乎沒有什麼旅客。
+
+                                                        軍事學院的學生基本上都過著寄宿制的生活，但是也有少量貴族的子女在僕人的陪伴下住在城鎮的房子裡。
+                                                </p>
+                                                <h2 style="position:relative;bottom:740px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:740px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;鑒於阿爾比翁是人工都市，第一級產業並不興盛，因此沒有什麼特產和名品。
+
+                                                        但是阿爾比翁有只在這裡才能閱覽的軍事學書籍，有許可的人可以帶走這些書籍的複印本。
+
+                                                        阿爾比翁在戰略學、戰術學、防衛學的研究上居於領先地位，因此不少同盟國的士官為了學習這些知識而拜訪這裡。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!--Lumacie_Archipelago  -->
+        <div id="myModal3" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1350px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2.4%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top: 6%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;
+                                                在星晶獸尤格多拉希爾的庇護下，大量的原始森林在露瑪希群島上生長得非常茂盛。
+                                                絕大部分森林的誕生時間可以追溯至星之民入侵和霸空戰爭時期。
+                                                傳說的遺跡和神秘的瑰寶被埋藏在森林的深處，甚至還有在空域其他地方都無法看到的奇異植物。
+                                                然而，許多冒險者礙於森林中隱藏的危險，無法探尋其中的奧秘。</p>
+                                </div>
+
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 640px;position: relative;bottom:250px;left:700px"
+                                                src="./img/GBF/island_pic/Lumacie_Archipelago.jfif" alt="">
+
+                                        <h2 style="position: relative;bottom: 900px;padding: 0 2%;margin-left: 0.6%;">
+                                                氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:880px;padding: 0 2%;">
+                                                        &emsp;&emsp;樹屋是露瑪茜群島的特色建築，其不僅視野遼闊，還可躲避魔物。
+                                                        露瑪希群島的氣候十分安定，氣溫不會隨著季節的更替而產生明顯的變化，但濕度非常的高，所以十分有利於森林植被的生長。
+                                                        有許多的魔物和猛獸盤踞在森林裡，所以島上的居民掌握了將房屋安置在高高的樹杈上的技巧，以此來避免野獸的襲擊。</p>
+                                        </div>
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;;bottom: 880px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:870px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>偉大的時間之樹</b></li>
+                                                        <p style="width: 500px;">
+                                                                時間之樹是一棵巨大的、有著數百年歷史的樹。它保護了露瑪希群島的其他樹木免受時間的影響，確保它們不會隨著時間的流淌而枯萎或衰敗。
+                                                        </p>
+
+                                                        <li><b>露瑪希的村莊</b> </li>
+                                                        <p style="width: 500px;">
+                                                                露瑪希群島的居民長期奉行孤立主義，他們既不對來訪的騎空士表示歡迎，也沒有趕走騎空士。就像時間之樹一樣，僅僅是站在歷史的長河中見證著世界的變遷。
+                                                        </p>
+
+                                                        <li><b>樹屋</b> </li>
+                                                        <p>在露瑪希，避免野獸和魔物襲擊最好的方法就是把房屋建在樹上，且樹頂的景色絕對值得你犧牲便利性來換取。
+                                                        </p>
+                                                        <li><b>森林深處的入口</b> </li>
+                                                        <p>露瑪希群島的大部分地區都被遮天蔽日的森林所覆蓋。在森林的最中心就是已被古老的童謠傳唱了不知道多久的時間之樹。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:870px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:870px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;當地的土著居民只有艾露恩族。島上的主要的設施集中在島的西側，包括騎空艇的中繼站，梅乃亞皇國設置的觀測所，以及當地居民生活的村落都集中在這裡。
+                                                </p>
+                                                <h2 style="position:relative;bottom:850px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:850px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;
+                                                        島上生活的人數不少，但生活方式卻並不為人所熟知，也沒有什麼出口至島外的特產。從現在無人居住的森林的深處有類似教會模樣的人工設施推斷，過去可能有發達的產業。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Valtz_Duchy -->
+        <div id="myModal4" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1450px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2.4%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top: 6%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;這個由多拉夫族組建的國家，其地底下是超高溫的熱源，且多虧了地下的高溫，一條熔岩之河得以流經全島而不曾淬化。
+                                                由於充分利用了地熱能源的鋼鐵工業迅猛發展和多拉夫族的靈巧手藝，整個巴魯茲公國呈現出欣欣向榮的景象。
+                                                整個法塔格蘭德空域規模最大的工廠就坐落在這裡，日復一日地重複著機械的勞動。
+                                                扎卡大公是巴爾茲公國的現任大公。巴爾茲公國以優秀的鍛造技術、優良的鍛造品質聞名整個空域，各個島嶼都對產自巴爾茲公國的金屬產品贊不絕口。
+                                        </p>
+                                </div>
+
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 640px;position: relative;bottom:300px;left:700px"
+                                                src="./img/GBF/island_pic/Valtz_Duchy.jfif" alt="">
+
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;;bottom: 800px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:780px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>格蘭德軍械庫</b></li>
+                                                        <p style="width: 500px;">
+                                                                法塔格蘭德空域最大的工廠，同時也是巴爾茲大公的官邸和辦公場所。在霸空戰爭時期這裡曾經是一座軍工廠，現在這裡作為巴爾茲公國鋼鐵工業的象徵，目視著整個公國經濟的發展。
+                                                        </p>
+
+                                                        <li> <b>熔岩之河</b> </li>
+                                                        <p style="width: 500px;">
+                                                                巴爾爾茲公國工業的熱能來源，這條河流經整個島嶼。因地下深層埋有強大的熱源，所以這條河得以避免淬化，流淌不息。
+                                                        </p>
+
+                                                        <li> <b>大車間</b> </li>
+                                                        <p style="width: 500px;">
+                                                                在巴爾茲公國有著多到不可計數的車間，其中的一部分甚至已經被廢棄了數百年。他們沒有名字，只有代號。人們將這些所有的車間合稱為大車間。
+                                                        </p>
+                                                        <li> <b>兵工廠</b> </li>
+                                                        <p style="width: 1300px;">
+                                                                除了上文提到的格蘭德軍械庫，還有一些環繞著工廠的礦山被人們稱為“兵工廠”。就像大車間一樣，這些礦山沒有名字，只有代號。
+
+                                                                在巴爾茲，絕大部分的山脈都是礦山，但是仍有一部分的山脈上長著蒼松翠柏。
+
+                                                                人們可以看到多拉夫族人居住在有植被覆蓋的山脈的山頂，彷彿和大自然渾然一體。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:760px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:760px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;由於這座島的主要產業是工礦業，因此大量擅長體力勞動的多拉夫族就定居在這裡，
+                                                        一直到了現在多拉夫族的人口數量佔總人口的大多數。
+                                                        霸空戰爭時期，因為多拉夫族最為活躍，於是便推舉多拉夫族人擔任首任大公，從那之後巴魯茲就一直被多拉夫族所統治。
+                                                        因為巴爾茲的工業十分發達，所以在統治階級中有一部分人認為公國應該使用霸空戰爭時期生產的武器去征服整個空域。
+                                                </p>
+                                                <h2 style="position:relative;bottom:740px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:740px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;巴爾茲公國的特產以鐵質產品為主。
+                                                        在霸空戰爭之前就已經擁有了完善的工業系統，所以在法塔格蘭德空域內自不必說，
+                                                        甚至在瘴流域擴大化之前的時期，還向其他空域大量出口產品。
+                                                        而在瘴流域擴大的現在，法塔格蘭德空域內製鐵鍛造以及相關產業的市場份額中，絕大多數都掌控在巴爾茲公國的手裡。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Zinkenstill -->
+        <div id="myModal5" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1400px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2.4%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;
+                                                賽克汀瑟是養育了主人公和碧的小島。高大的山脈將島內居民和外界隔離開來，只有擁有傲人的騎空艇技術的人才能和島外進行交流。
+                                                島民們在穩定的自然環境中自給自足，同時在被稱為金露森林的最深處還有被巫女所供奉著的星晶。</p>
+                                </div>
+
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:200px;left:700px"
+                                                src="./img/GBF/island_pic/Zinkenstill.jpg" alt="">
+
+                                        <h2 style="position: relative;bottom:800px;padding: 0 2%;margin-left: 0.6%;">
+                                                氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:790px;padding: 0 2%;">
+                                                        &emsp;&emsp;吉哈澤爾村全貌，左邊的房屋就是主人公和碧
+
+                                                        曾經生活過的地方賽克汀瑟島的氣候溫暖安定，四季陽光明媚，島民的生活主要以農耕為主，完全能夠實現自給自足。
+
+                                                        島內只有1個村子，那就是位於島中央的吉哈澤爾村，所有的島民到了晚上都會回到村子裡過夜。
+
+                                                        村子裡只有20戶左右的人家，再加上島內也沒有什麼觀光資源，所以很少有島外的訪客來到這裡。
+
+                                                        不過即便如此，也會有商人不定期地將村子無法生產的東西從外面運到這裡，村民也會通過商人了解外面的世界。</p>
+                                        </div>
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;;bottom: 790px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:780px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>主人公之家</b></li>
+                                                        <p style="width: 500px;">
+                                                                主人公和碧一起生活過的地方，沒有人知道肩負著世界的命運的少年就是在這座房子裡出生和成長。
+                                                        </p>
+
+                                                        <li><b>隱秘之村</b> </li>
+                                                        <p style="width: 500px;">
+                                                                吉哈澤爾村已經與世隔絕超過數百年的時間。然而，他們並不是完全地奉行孤立主義，事實上村民們還是很歡迎那些不時到訪的騎空士和遊客的。
+                                                        </p>
+
+                                                        <li><b>金露森林</b> </li>
+                                                        <p>這座島最大的秘密被金露森林所包圍著。星晶的力量可以讓人民在森林之中自由生活。只有被選中的巫女才能夠進入這座森林。
+                                                        </p>
+                                                        <li><b>環形山脈</b> </li>
+                                                        <p style="width: 1300px;">
+                                                                整個賽克汀瑟島被外部山脈所環繞著，這座山脈曾經切斷了島民和外界的聯繫。但是由於近年來騎空艇技術的發展，現在島民也可以積極地參加和其他島嶼的有意義的交流了。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:780px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:780px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;居民大多數為人族，同時也有一小部分的多拉夫族共同生活在吉哈澤爾村。
+                                                </p>
+                                                <h2 style="position:relative;bottom:760px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:760px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;
+                                                        賽克汀瑟島上的甜星花有著鮮豔的黃色花瓣，並且產出的花蜜具有色澤鮮亮，口感香甜等特點；夢碧芭草因優秀的退熱效果而受到醫療界廣泛重視。這兩種花草是賽克汀瑟島上僅有的兩種特產。
+
+                                                        雖然甜星花在空域內的各個島嶼上都能發現，但賽克汀瑟島的甜星花因高品質的花蜜而獨樹一幟。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Former_Capital_Mephorash -->
+        <div id="myModal6" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1500px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;拉比島歷史悠久，在星之民襲來之前一直是艾爾斯提王國的首都。
+
+                                                因為島上遍布沙漠，於是當地人民利用砂土製造了大量的魔像。
+
+                                                在艾爾斯提王國變成艾爾斯提帝國之後，國家的主要職能部門轉移到了現在的首都——阿卡斯提亞，因此拉比島的人口也大幅銳減到原來的十分之一。
+
+                                                魔像的研究以及製造工藝在數百年前達到了全盛時期，但是現在大部分的相關資料技術已經遺失，無法重現往日的輝煌。</p>
+                                </div>
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:300px;left:700px"
+                                                src="./img/GBF/island_pic/Former_Capital_Mephorash.jfif" alt="">
+
+                                        <h2 style="position: relative;bottom: 800px;padding: 0 2%;left: 5px;">氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:790px;padding: 0 2%;">
+                                                        &emsp;&emsp;美弗拉修城一瞥。遠處的建築就是著名的艾麗婭·海魯姆宮殿。
+
+                                                        拉比島上大多是極其乾旱的沙漠，其中砂土的材質非常適合當做製作魔像的素材，所以艾爾斯提王國一時間成為魔像製造業大國。因為島上氣候乾旱少雨，所以僅有一些能夠長期耐旱的植物才能夠在拉比島上生長。
+                                                </p>
+                                        </div>
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left:30px;bottom: 790px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:780px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>艾麗婭·海魯姆宮殿</b></li>
+                                                        <p style="width: 500px;">
+                                                                自從原艾爾斯提王國建國以來，這座宏偉的宮殿一直是王族居住和辦公的場所。這座宮殿擁有全法塔格蘭德空域中最古典也是最傳統的建築風格，雖然外觀簡樸，但內部卻充滿活力。縱使經過了數千年的風吹雨打，這座建築仍然像剛剛建成一般壯麗輝煌。
+                                                        </p>
+
+                                                        <li><b>美弗拉修城</b> </li>
+                                                        <p style="width: 1300px;">
+                                                                擁有悠久歷史的古城，在街道上仍然能看到當年作為王都的痕跡。史書中記載，美弗拉修城早期依托艾麗婭海魯姆宮殿而修建，城中的居民都對居住在宮殿裡的王族充滿敬意。
+                                                        </p>
+
+                                                        <li><b>閃姆沙漠</b> </li>
+                                                        <p style="width: 1300px;">
+                                                                閃姆沙漠是環繞著古都美佛拉修城的廣闊的沙漠地帶的總稱。據說，在這些砂石之下，埋藏著許多被遺忘的古建築。有的時候城裡的居民還能夠碰到守護在這些古建築附近的遠古魔像。為了避免意外的發生，在穿越這片沙漠時一定要提高警惕。
+                                                        </p>
+                                                        <li><b>沙漠之樹</b> </li>
+                                                        <p style="width: 1300px;">
+                                                                儘管拉比島的大部分都被沙漠所覆蓋，但在艾麗婭海魯姆宮殿和閃姆沙漠的交界處附近仍然可以看到零星的一些樹木。其中的大部分都是拉比島的本地植物，同時也有一部分植物的原產地是露瑪茜群島的深處。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:780px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:780px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;拉比島的居民支持艾爾斯提王室的執政，並且王室也頻繁地與當地居民交流。
+
+                                                        美弗拉修城曾經是最繁榮的城市之一，但現在卻逐漸蕭條，居民的平均年齡和其他國家相比略高一些。
+
+                                                        由於氣候環境較差，這裡的人民很少與外界交流，人們靠著國內的買賣過著小範圍內自給自足的生活。
+                                                </p>
+                                                <h2 style="position:relative;bottom:770px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:770px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;由於惡劣的氣候環境，拉比島的本地料理用的是別國不怎麼食用的食材，不過有些狂熱者很喜歡那些用獨特調料調味的料理。
+
+                                                        艾麗婭·海魯姆宮殿雖然是一座歷史名城，但是作為觀光景點卻沒什麼人氣，只有一部分歷史愛好者和研究人員會來參觀。
+
+                                                        現在帝國禁止一切外來人員進入宮殿，自然也就沒什麼遊客會造訪拉比島了。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Agastia -->
+        <div id="myModal7" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div style="height: 1050px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;不夜城·帝都阿卡斯提亞是艾爾斯提帝國強權的象徵。
+
+                                                徹夜不息的火把使得整個島嶼即使在夜晚也亮如白晝。整個島嶼一直在不停地翻新和重建當中，以確保島整個島嶼上所有的武器裝備都是最新科學的產物。
+
+                                                儘管阿加斯蒂亞是整個法塔格蘭德空域人口最多的島嶼，但島上的環境污染問題和犯罪率居高不下長期困擾著帝國政府。
+                                        </p>
+                                </div>
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:250px;left:700px"
+                                                src="./img/GBF/island_pic/Agastia.jpg" alt="">
+
+
+
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px; bottom: 800px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:790px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>阿卡斯提亞居住區</b></li>
+                                                        <p style="width: 500px;">
+                                                                自從原艾爾斯提王國建國以來，這座宏偉的宮殿一直是王族居住和辦公的場所。這座宮殿擁有全法塔格蘭德空域中最古典也是最傳統的建築風格，雖然外觀簡樸，但內部卻充滿活力。縱使經過了數千年的風吹雨打，這座建築仍然像剛剛建成一般壯麗輝煌。
+                                                        </p>
+
+                                                        <li><b>艾爾斯提帝國戰列艦</b> </li>
+                                                        <p style="width: 500px;">
+                                                                在法塔格蘭德空域內，艾爾斯提帝國的戰列艦隨處可見。其主要用途就是與其他騎空艇作戰，並兼具運送士兵、武器和物資等的功能。這些戰列艦最初在加隆佐島上購買時僅僅是作為一般用途的軍艦，但是帝國的專家對其進行了大規模改修，現在這些戰艦已經引起了空域內所有國家的擔憂。
+                                                        </p>
+
+                                                        <li><b>阿卡斯提亞城堡</b> </li>
+                                                        <p style="width: 500px;">
+                                                                艾爾斯提從君主制政體轉向帝國主義之時，才決定遷都到阿卡斯提亞並於此地修建城堡。整個島嶼的頂部和底部都被尖尖的建築物所覆蓋，在阿卡斯提亞，你甚至看不見任何的綠色植物。
+                                                        </p>
+                                                        <li><b>艾爾斯提帝國政府官邸</b> </li>
+                                                        <p>艾爾斯提帝國的政府官邸坐落於整個島嶼的正中央，因其造型獨特，居民們也更願意稱其為“摩天塔”。帝國政府官邸嚴格限制一般平民的進出，雖然其中的一部分區域對公眾開放，但是更多的區域都籠罩在神秘之中。
+                                                        </p>
+                                                </ol>
+
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Amalthea -->
+        <div id="myModal8" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1600px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;作為秩序騎空團在法塔格蘭德空域的分團——第四騎空艇團的駐地，整個阿瑪爾提亞島進行了大規模的翻新和建設，從原來的無人島變成了現在的現代化島嶼。
+
+                                                整個島嶼屬於第四騎空艇團的領地，島上幾乎所有的居民都是第四騎空艇團的團員，或者與第四騎空艇團有關。
+
+                                                阿瑪爾提亞島因秩序騎空團會為罪犯提供改過自新的機會而聞名遐邇，許多罪犯在被秩序騎空團逮捕後在這裡找到工作，並從此改變了他們的生活。
+
+                                                警備隊經常在街道上巡邏，所以按安全程度將所有島嶼排序的話，如果阿瑪爾提亞島排在第二，那絕對沒有島嶼敢排在第一。</p>
+                                </div>
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:380px;left:700px"
+                                                src="./img/GBF/island_pic/Amalthea.jfif" alt="">
+
+                                        <h2 style="position: relative;bottom: 820px;padding: 0 2%;left: 5px;">氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:810px;padding: 0 2%;">
+                                                        &emsp;&emsp;阿馬提亞島的氣候全年溫暖平穩，極少出現惡劣的自然災害。
+
+                                                        位於阿馬提亞島中央位置的白色巨型建築物是秩序騎空團第四大廳。在第四大廳下面的宏偉階梯是第四騎空艇團依托原島嶼的地形所修建的，站在台階之下仰望大廳，一股敬畏之情油然而生。在第四大廳的後面是一座被稱為“庫魯維”的險要山脈，在山內居住了許多兇暴的魔物，因此許多罪犯寧願接受改造成為良好公民也不願冒風險越獄。
+                                                </p>
+                                        </div>
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;;bottom: 810px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:800px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>秩序騎空團·第四大廳</b></li>
+                                                        <p>如果你登上阿馬提亞島，你將會發現一座位於全島最高處</br>
+                                                                一幢巨型白色建築在翠綠色的阿馬提亞中顯得格外引人注目。秩序騎空團第四騎空艇團的總部就設在這裡，維持著整個空域的秩序和安寧。在第四大廳的懸崖邊上，佇立著一尊首任第四騎空艇團團長的雕像。這尊雕像時刻警示著團員們以及所有的訪客：秩序和規則之花需由利劍來守護方可茁壯成長。
+                                                        </p>
+
+                                                        <li><b>第四大廳·正門</b> </li>
+                                                        <p>別稱：裁決之門</p>
+                                                        <p>專程來秩序騎空團求助的人們、因罪被秩序騎空團逮捕的人們，都會經過裁決之門進入第四大廳。在進門之後能否臉上洋溢著笑容走出裁決之門，就要取決於秩序騎空團的判決了。
+                                                        </p>
+
+
+
+                                                        <li><b>阿馬提亞島居民區</b> </li>
+                                                        <p>秩序騎空團的騎空士及其家人所居住的地方。設立秩序騎空團警備部隊的目的就是消滅一切試圖入侵居民區的魔物。都將受到的在執法者的守備部隊的嚴密監視下進行的，這給了這個城鎮在天空中最安全的名聲。
+                                                        </p>
+                                                        <li><b>庫魯維山脈</b> </li>
+                                                        <p>阿馬提亞島的大部分被這些長滿了鬱鬱蔥蔥的茂盛植物的山脈所覆蓋。在這些生機盎然的森林裡，生活著許多兇猛的野獸。別說一般的居民不敢輕易進入森林，甚至連從第四大廳逃出來的罪犯也不敢向山脈方向前進半步。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:800px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:800px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;島上除了秩序騎空團的團員以外，還住著為團員的生活提供保障的商店以及其他設施的工作人員。
+
+                                                        島上還有曾被秩序騎空團逮捕並且現在還在贖罪的人，該島同時也作為幫助他們回歸社會的場所。
+                                                </p>
+                                                <h2 style="position:relative;bottom:790px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:790px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;由於該島屬於秩序騎空團領地，不是觀光景點，因此也沒有販賣特產。島上幾乎沒有農耕，食物日用品全靠從其他島進口，因此也沒有名產品。但是由於時刻有秩序騎空團保衛城市安全，阿瑪爾提亞島作為安全都市頗有名氣，倒是有不少人希望移民到這裡。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Mist-Shrouded_Isle -->
+        <div id="myModal9" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1200px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;就像賽克汀瑟，這裡原本是一個能夠自給自足的小島，整個島嶼上只有一個村莊，雖然這裡並沒有什麼特產，但這裡的村民過著“阡陌交通，雞犬相聞”般悠然自在的田園生活，直到星晶獸塞雷斯特改變了這一切。
+
+                                                在過去，這裡還與臨近的島嶼有過一定的接觸，但自從濃霧升起之後，整個島嶼被完全隔離了起來，但仍有極少數到訪過這裡的騎空士聲稱環霧之島的村民們非常熱情好客。
+                                        </p>
+                                </div>
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:300px;left:700px"
+                                                src="./img/GBF/island_pic/Mist-Shrouded_Isle.jfif" alt="">
+
+                                        <h2 style="position: relative;bottom: 800px;padding: 0 2%;left: 5px;">氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:790px;padding: 0 2%;">
+                                                        &emsp;&emsp;特拉蒙特村的黎明，圖中的橋被村民們形像地稱為“死者之橋”。雖然環霧之島也有四季的更替，但總體來說氣候較為溫暖。村民們日出而作日入而息，盡情地享受著自然生活的快樂。
+
+                                                        現在的魔物之館，已經成為了一名叫做菲莉的少女及其家族居住的地方。
+
+                                                        在星晶獸塞雷斯特顯現之後，出於自責之情，菲莉將魔物之館當做自己的囚籠，不願與村民們進行接觸。
+
+                                                        同時由於菲莉能夠和魔物和野獸們進行交流，所以館的周圍徘徊著大量的魔物，村民們也因此將菲莉的家稱作“魔物之館”。
+                                                </p>
+                                        </div>
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;bottom: 790px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:780px;left: 60px;list-style-type: circle;width: 1300px;">
+                                                        <li><b>環霧之民</b></li>
+                                                        <p>由於塞雷斯特的到來，村民們很快發現他們無法死亡，</br>
+                                                                甚至也沒有新生兒降臨。不知道這種情況持續了多久，整個村莊變成了名副其實的殭屍之村。
+                                                        </p>
+
+                                                        <li><b>魔物之館</b>
+
+                                                                <p>魔物之館是一座在村莊外隱約可見的洋館。之所以取這個名字，是因為村民們發現這座建築物的周圍經常有魔物和野獸出沒。這座洋館曾經招待過一些重要的客人，但是自從村民們都變成殭屍之後，這些客人就很少在村子裡露面了。
+                                                                </p>
+                                                        </li>
+
+
+
+                                                        <li><b>死者之橋</b> </li>
+                                                        <p>傳說中，死者就是通過這座橋返回到家人的身邊。事實上，這個傳說只是來源於這座橋是孩子們放學回家時的必經之路
+                                                        </p>
+                                                        <li><b>村政府辦公室</b> </li>
+                                                        <p>這是這個村莊為數不多的公共建築之一。村民們在一個簡陋的記事簿上記錄著每天發生的事情。根據記錄，這個島的名字是“特拉蒙特”，但由於濃霧阻斷了與外界的接觸，大多數村民早已忘記了自己家園的名稱。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:420px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:420px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;環霧之島上居住著除了哈比族以外的各個種族。
+
+                                                        島上人口不多，所以居民們十分團結，但這並不意味著排斥外來人，偶爾有騎空士或是旅行的商人到來時，他們也會像對待親人一樣對待他們。
+
+                                                        居民們的生活都過得十分輕鬆愜意。
+
+                                                        村子裡雖然有村志，但是並沒有詳細記錄村莊的人口變動情況，不過在島上生活的人們好像也並不在意村子的發展。
+                                                </p>
+                                                <h2 style="position:relative;bottom:420px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:420px;left:30px;width:1200px;">
+                                                        &emsp;&emsp;環霧之島上並沒有什麼特產與名產，也沒有觀光資源，但是村民的熱情款待卻給每一位來過這裡的騎空士留下了極為深刻的印象。
+
+                                                        村民們製作的食物並不復雜，食材也不稀有，但是正是憑藉著這種家常菜的味道，吸引了一批又一批遊客的味蕾，不少的旅客在渴求治愈時通常都會選擇來這裡飽餐一頓。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Golonzo_Island -->
+        <div id="myModal10" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1600px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;加隆佐島擁有整個法塔格蘭德空域最優秀的機械師，他們擁有獨立修理任何騎空艇的技能。儘管空域內許多的島嶼都具備簡單修理騎空艇的能力，但加隆佐島永遠是所有騎空士們所信任的唯一一個大型維修整備和裝備升級的地方。
+
+                                                同時因為星晶獸米斯拉的存在，在加隆佐島上簽訂的契約絕對無法打破，所以加隆佐島也是騎空艇買賣的主要場所。在島嶼的正中央是一個可以從島上的任何地方看到的巨型船塢和它的上升桅杆，它們不僅僅是加隆佐島的象徵，還是所有居住在加隆佐島的機械師們的精神信仰。
+                                        </p>
+                                </div>
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:350px;left:700px"
+                                                src="./img/GBF/island_pic/Golonzo_Island.jfif" alt="">
+
+                                        <h2 style="position: relative;bottom: 800px;padding: 0 2%;left: 5px;">氣候和風土</h2>
+                                        <div class="column" style="padding: 0 2%;">
+                                                <p style="width:500px;position: relative;bottom:790px;padding: 0 2%;">
+                                                        &emsp;&emsp;整個加隆佐島的造型酷似一艘揚帆起航的騎空艇，這也是這座島嶼存在的主要目的。
+
+                                                        整個島嶼的設計和道路建設都非常貼近現代。不論晝夜，人們都可以看到從中央船塢冒出的修理騎空艇所產生的化學煙霧，同時這所船塢也是加隆佐島人民的驕傲。
+
+                                                        風力較為平穩，所以即便是滿身瘡痍的騎空艇也可以放心地入渠進行修理。加隆佐島的整體規模並不大，其中人工區域佔了絕大部分，所以經濟總量比起阿爾比恩和阿瑪爾提亞要略遜一籌。
+                                                </p>
+                                        </div>
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;bottom: 790px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:780px;left: 60px;list-style-type: circle;width: 1300px;">
+                                                        <li><b>中央船塢</b></li>
+                                                        <p>這個巨型船塢是加隆佐島的標誌性建築。在船塢裡面，</br>
+                                                                無數只受損的騎空艇等待著工人進行維修維護和裝備升級。</br>不僅如此，加隆佐船塢還承接一部分建造新船的訂單。高級工程師也在船塢中日夜不停地研究如何建造更快、更強、更美的騎空艇。
+
+                                                        </p>
+
+                                                        <li><b> 整備中的騎空艇</b>
+                                                                <p>如右圖所示，一艘騎空艇正在中央船塢內進行調整。對騎空士來說，騎空艇不僅僅是他們乘坐的交通工具，更是他們是他們的精神支柱和賴以生存的根源。因此，騎空士們通常只會把騎空艇交給他們所信任的技術人員。
+                                                                </p>
+                                                        </li>
+
+
+
+                                                        <li><b>整備用起重機</b> </li>
+                                                        <p>整備用起重機在建造和維護騎空艇的過程中起到了至關重要的作用。每台起重機按照其規格和承重能力分為不同的等級，其中最高等級被稱為“米佳德級”。
+                                                        </p>
+                                                        <li><b>調度室</b> </li>
+                                                        <p>調度室是一個協調港口交通的重要機構。由於大量的騎空艇在中央船塢附近進進出出，經常會導致交通混亂。這時就需要調度室給每一艘騎空艇下達精確指令，以確保他們能夠平安駛離港口。
+                                                        </p>
+                                                </ol>
+                                                <h2 style="position:relative;bottom:780px;left:30px">主要居民</h2>
+                                                <p style="position:relative;bottom:780px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;人類的騎空士；多拉夫族的工匠，哈文族的商人；以及艾露恩族的設計師，各種種族生活在一起。大家不分晝夜地熱衷於研究騎空艇的改造和新功能的實裝。
+                                                </p>
+                                                <h2 style="position:relative;bottom:770px;left:30px">特產和名品</h2>
+                                                <p style="position:relative;bottom:770px;left:30px;width:1300px;">
+                                                        &emsp;&emsp;
+                                                        工匠們從無法修理的騎空艇上回收到的稀有金屬，礦石，零部件等產品在黑市上頗受歡迎。
+
+                                                        加隆佐島主要進行騎空艇的設計開發，而量產則主要在巴魯茲等地進行。同時還有機會在加隆佐入手一些稀有零部件，不過這些零部件都是些還沒來得及量產或者無法量產的特殊部件，並沒有什麼泛用性。
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!-- Dydroit_Belt -->
+        <div id="myModal11" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1100px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 600px;">
+                                                &emsp;&emsp;低層的雲海與遠方的瘴流域遙相呼應，也算是奇特的景觀。戴達羅島鏈其實是一個穿過了瘴流域，橫跨數個空域的巨大列島，我們在法塔格蘭德空域內看到的僅僅是列島的一部分。
+
+                                                列島主要由巨大的岩石構成，並且由於星晶獸キクリ的力量，這些岩石得以緊密地連結在一起，進而構成了一個龐大的列島。由於被瘴流域所阻斷，戴達羅島鏈在每個空域內都有一個主要城市。但是這樣的城市內大多是商人和探險家，並沒有人會選擇在這樣的地方定居。
+
+                                                雖然從理論上來說，戴達羅島鏈是少數幾個可以不乘坐騎空艇就前往其他空域的地方之一，但是道路上充滿了艱難險阻，除了七曜騎士之外，任何有此想法之人必須要做好喪命的準備方可上路。
+                                        </p>
+                                </div>
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:370px;left:700px"
+                                                src="./img/GBF/island_pic/Dydroit_Belt.jpg" alt="">
+
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left: 30px;;bottom: 800px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:790px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>戴達羅島鏈·中央城市</b></li>
+                                                        <p style="width: 500px;">
+                                                                這座城市位於法塔格蘭德空域空域的邊界地帶。因為很少有人能夠穿過瘴流域，所以戴達羅島鏈在各個空域內都設有一個類似的城市，其主要目的就是為各個商人和探險家提供便利，使得他們能夠買到各種各樣的奇珍異寶和實用的裝備。
+                                                        </p>
+
+                                                        <li><b>戴達羅島鏈·邊緣地帶</b> </li>
+                                                        <p style="width: 500px;">
+                                                                戴達羅島鏈的邊緣地帶主要由一些廣闊並且形狀不規則的岩石組成。這些岩石是阻擋瘴流域侵襲島鏈內部的唯一屏障，千百年來它們一直佇立在空域的最邊緣，默默地用身軀承受著狂風的怒號。
+                                                        </p>
+
+                                                        <li><b>戴達羅島鏈·岩石群</b> </li>
+                                                        <p>在戴達羅島鏈的內部存在一些被巨型石塊所包圍著的小型岩石群。因為島鏈內側的風力相較外側更為平穩，所以許多探險隊的大本營都設立於此，用於展開向瘴流域以及其他空域的勘探任務。即便如此，這些探險家們也並不會長期逗留在戴達羅島鏈內，畢竟這裡的自然條件實在是太惡劣了。
+                                                        </p>
+                                                        <li><b>雲海</b> </li>
+                                                        <p>在戴達羅島鏈的下部是一片廣闊的雲海。當瘴流域的強風刮來之時，整個島鏈都會被雲海所籠罩。在這種天氣裡能見度極低，所以經常會發生從岩石上跌落的事故。為了防止這種事情的發生，當云層上升時，所有勘探任務以及其他戶外活動都將被終止。
+                                                        </p>
+                                                </ol>
+
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <!--Silverwind_Stretch  -->
+        <div id="myModal12" class="mymodal">
+
+                <div class="modal-content row" style=" overflow:hidden;">
+                        <span class="close">&times;</span>
+                        <div class="modaldiv" style="height: 1100px;">
+                                <h2 style="position: absolute;margin-top: 1%;margin-left: 2%;">島嶼概況</h2>
+
+                                <div class="column" style="margin-top:5%;margin-left: 2.4%;">
+                                        <p style="width: 500px;">
+                                                &emsp;&emsp;法塔格蘭德空域最北部的巨大大陸統稱為無盡之北。這里大部分都是未開墾的土地，所以大多數的國家都沒有對這裡動過心思。
+
+                                                正因為如此，無盡之北成為了無法者集團的樂園。由於其獨特的地理位置和氣候條件，在無盡之北生活著許多你絕對沒有見過的奇珍異獸。
+
+                                                該地區的中心地帶——白風之境——上矗立著無盡之北的象徵：艾歐尼歐山脈。事實上，包括艾歐尼歐山脈在內，白風之境的一部分地區已經被瘴流域所覆蓋，這片土地可以說是全空域最殘酷的地區了。
+                                        </p>
+                                </div>
+                                <div class="column"> <img class="islandpic"
+                                                style="width: 650px;position: relative;bottom:350px;left:700px"
+                                                src="./img/GBF/island_pic/Silverwind_Stretch.jpg" alt="">
+
+
+                                        <div class="column" style="position: relative;">
+                                                <h2 style="position:relative;left:30px;bottom: 800px;">景點</h2>
+                                                <ol
+                                                        style="position: relative;bottom:790px;left: 60px;list-style-type: circle;width: 1200px;">
+                                                        <li><b>艾歐尼歐山脈</b></li>
+                                                        <p style="width: 500px;">
+                                                                作為白風之境的象徵，艾歐尼歐山脈是全法塔格蘭德空域內最大的山脈，其廣闊的山形構成了無盡之北的屏障。人們一般認為白風之境是空域內最危險的地方，無數的探險家信心滿滿地踏上這片土地之後都沒有能夠活著出來。
+
+                                                        </p>
+
+                                                        <li><b>瘴流域</b> </li>
+                                                        <p style="width: 500px;">
+                                                                將各個空域隔離開來的暴風之壁。它的產生時間可以追溯到霸空戰爭之前，星之民襲來之時。瘴流域內的奇特物質使得魔物變得嗜血成性，兇猛異常。不僅如此，超高濃度的瘴氣富含各種毒素，如果沒有採取防護措施就進入瘴流域的話，常人只需幾分鐘即可喪命。
+                                                        </p>
+
+                                                        <li><b>白風之境的魔物</b> </li>
+                                                        <p>儘管在這裡的魔物一定程度上與其他島嶼上的有相似之處，但是白風之境上的魔獸身材更加龐大，體型也更加健碩。關於魔物為何能進化到如此程度，學術界對此有著各種各樣的理論假設，包括惡劣環境促使魔物們進化，甚至是島上星晶獸對魔物們產生了影響。然而，目前還沒有任何假設得到證實。
+                                                        </p>
+                                                        <li><b>世外桃源</b> </li>
+                                                        <p>在未開拓過的白風之境大地上流傳著各種各樣的傳說。其中最神奇的當屬“隱秘之村”。傳說中一位騎空士在翻越艾歐尼歐山脈時體力不支昏死了過去。當他再次醒來時，發現自己身處一個村落之中，村民們的熱情友好使這位騎空士倍感驚異。在休整數日之後，騎空士離開了這個村莊。但是，後來當這位騎空士想要再次到訪這個村莊時，卻無論如何也找不到那個村子的入口了。
+                                                        </p>
+                                                </ol>
+
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <script src="./_js/project01.js"></script>
+
+
+</body>
+
+</html>
